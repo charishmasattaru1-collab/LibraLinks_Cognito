@@ -1,0 +1,3 @@
+server.port=8080
+google.api.key=AIzaSyDP2PtkvmOQkLLFzQPqMXrdQF942qMSADM
+spring.mvc.static-path-pattern=/**

@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto17  # Or corretto11, corretto8, etc.
+  build:
+    commands:
+      - echo "Build started on $(date)"
+      - mvn clean package  # Use 'gradle build' for Gradle
+  post_build:
+    commands:
+      - echo "Build completed on $(date)"
+
+artifacts:
+  files:
+    - 'target/*.jar'  # Change this if your build output is a .war file
+  discard-paths: yes
